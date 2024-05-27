@@ -38,7 +38,6 @@ fun RegisterScreen(navController: NavController) {
             label = { Text("E-mail") }
         )
         Button(onClick = {
-// Implementar a lógica de registro aqui
             navController.navigate("login") {
                 popUpTo("login") { inclusive = true }
             }

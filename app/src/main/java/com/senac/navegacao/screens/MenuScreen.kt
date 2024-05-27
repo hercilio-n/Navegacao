@@ -11,9 +11,6 @@ import androidx.navigation.NavController
 fun MenuScreen(navController: NavController, username: String) {
     Column {
         Text(text = "Bem-Vindo, $username!")
-        // Adicione aqui os itens do menu
-
-        // Botão para voltar para a tela de login
         Button(onClick = { navController.navigate("login") }) {
             Text(text = "Logout")
         }
